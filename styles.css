@@ -1,0 +1,71 @@
+.page {
+    background-color: black;
+}
+
+.header {
+    color: aliceblue;
+    text-align: center;
+}
+
+#logo {
+    font-family: Snell Roundhand, cursive;}
+
+.pics {
+ width: 300px;
+ height: 300px;
+ /* padding: 5px; */
+ /* border-radius: 2px; */
+}
+
+.pics:hover {
+    opacity: 95%;
+    cursor: pointer;
+  }
+
+.footer{
+    /* color: aliceblue; */
+    padding: 30px;
+    text-align: center;
+}
+
+/* container */
+.center {
+    /* background-color: aqua; */
+    display: flex;
+    justify-content: center;    
+    align-items: center;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+    width: auto;
+    gap: 16px;
+}
+
+/* tablet breakpoint */
+@media (min-width:600px) {
+    .grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+/* tablet breakpoint */
+@media (min-width:900px) {
+    .grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+}
+
+.faw {
+    color: white;
+    /* padding: 20px; */
+    font-size: 20px;
+    width: 60px;
+    text-decoration: none;
+    /* margin: 5px 80px; */
+}
+
+.faw:hover {
+    opacity: 90%;
+}
