@@ -1,14 +1,21 @@
+@font-face {
+    font-family: 'MyFont';
+    src: url('./poppins/Poppins-Bold.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 .page {
-    background-color: black;
+    background-color: white;
 }
 
 .header {
-    color: aliceblue;
+    /* color: aliceblue; */
     text-align: center;
 }
 
 #logo {
-    font-family: Snell Roundhand, cursive;}
+    font-family: 'Poppins-Bold.otf', sans-serif;}
 
 .pics {
  width: 300px;
@@ -58,7 +65,7 @@
 }
 
 .faw {
-    color: white;
+    color: black;
     /* padding: 20px; */
     font-size: 20px;
     width: 60px;
