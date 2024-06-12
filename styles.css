@@ -1,9 +1,9 @@
-@font-face {
+/* @font-face {
     font-family: 'MyFont';
-    src: url('./poppins/Poppins-Bold.otf') format('opentype');
+    src: url('./poppins/Poppins-Thin.otf') format('opentype');
     font-weight: normal;
     font-style: normal;
-}
+} */
 
 .page {
     background-color: white;
@@ -16,7 +16,9 @@
 }
 
 #logo {
-    font-family: 'Poppins-Bold.otf', sans-serif;}
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-style: normal;}
 
 .pics {
  width: 300px;
