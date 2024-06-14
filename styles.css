@@ -17,9 +17,15 @@
 }
 
 #logo {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    /* font-style:;} */ }
+
+#sub-logo {
     font-family: 'Inter';
-    font-weight: 650;
-    font-size: 24px;
+    font-weight: 500;
+    font-size: 10px;
     /* font-style:;} */
 }
 .pics {
