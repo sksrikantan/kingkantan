@@ -17,15 +17,18 @@
     /* padding: 20px; */
 }
 
-#sublogo {
-    text-align: right;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 600;
-    font-size: 18px;
-    margin: 0;
-    padding: 0;
-    padding-top: 10px;
+#sub-logo {
+    /* text-align: right; */
+    color: gray;
+    font-family: 'Karla', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    margin-top: 0;
+    padding-top: 5px;
+    /* padding-top: 10px; */
     /* margin-right: 18%; */
+    padding-bottom: 10px;
+
 }
 
 #desktop-logo {
@@ -39,23 +42,24 @@
     display: none;
     margin-bottom: 0;
     /* padding: 10; */
+    padding-bottom: 0px;
+
 }
 
 #mobile-logo {
-    font-family: 'Poppins', sans-serif;
-    font-weight: 600;
-    font-size: 24px;
-    /* color: BLUE; */
-    /* font-style:;} */ 
-    /* margin: 0;
-    padding: 0; */
+    font-family: 'Karla', sans-serif;
+    font-weight: 750;
+    font-size: 30px;
+    padding: 0;
+    margin-bottom: 0;
 }
 
 
 .pics {
- width: 300px;
- height: 300px;
- /* padding: 5px; */
+ width: 225px;
+ height: 225px;
+ /* padding: 2%; */
+ /* padding-bottom: 0; */
  /* border-radius: 2px; */
 }
 
@@ -92,7 +96,7 @@
 
 .grid {
     display: grid;
-    grid-template-columns: repeat(1, minmax(0, 1fr));
+    grid-template-columns: repeat(2, minmax(0, 1fr));
     width: auto;
     gap: 16px;
 }
@@ -101,22 +105,29 @@
 @media (min-width:600px) {
     .grid {
         grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 15px;
+
     }
     .faw {
         width: 60px;
     }
-    #mobile-logo {
+    /* #mobile-logo {
         display: none;
     }
     #desktop-logo {
         display: block;
-    }
+    } */
+    .pics {
+        width: 300px;
+        height: 300px;
+       }
 }
 
-/* tablet breakpoint */
+/* desktop breakpoint */
 @media (min-width:900px) {
     .grid {
         grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 15px;
     }
     .faw {
         width: 60px;
@@ -127,5 +138,9 @@
     #desktop-logo {
         display: block;
     }
+    .pics {
+        width: 300px;
+        height: 300px;
+       }
 }
 
