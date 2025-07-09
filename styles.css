@@ -1,32 +1,25 @@
-/* @font-face {
-    font-family: 'MyFont';
-    src: url('./poppins/Poppins-Thin.otf') format('opentype');
-    font-weight: normal;
-    font-style: normal;
-} */
+a {
+    color: inherit;
+    text-decoration: none;
+  }
 
-.page {
-    background-color: white;
-    /* background-color: BLACK; */
-    height: 100vh;
-}
+.logo {
+    font-family: 'Karla', sans-serif;
+    font-weight: 750;
+    font-size: 28px;
+  }
 
 .header {
-    /* color: aliceblue; */
     text-align: center;
-    /* padding: 20px; */
 }
 
 #sub-logo {
-    /* text-align: right; */
     color: gray;
     font-family: 'Karla', sans-serif;
     font-weight: 400;
     font-size: 16px;
     margin-top: 0;
     padding-top: 5px;
-    /* padding-top: 10px; */
-    /* margin-right: 18%; */
     padding-bottom: 10px;
 
 }
@@ -35,13 +28,8 @@
     font-family: 'Karla', sans-serif;
     font-weight: 750;
     font-size: 35px;
-
-    /* font-size: 24; */
-    /* color: BLUE; */
-    /* font-style:;} */
     display: none;
     margin-bottom: 0;
-    /* padding: 10; */
     padding-bottom: 0px;
 
 }
@@ -54,7 +42,39 @@
     margin-bottom: 0;
 }
 
+/* NEW ✱  NAV  ✱  (just 1 rule)
+   ───────────────────────── */
+   .nav{
+    display:flex;
+    justify-content:center;
+    gap:2rem;
+    font-family:'Karla',sans-serif;
+    font-weight:600;
+    font-size:14px;
+    margin-top:10px;
+    margin-bottom:30px;
+  }
 
+  /* NEW ✱  HERO / VIDEO  ✱  (2 rules)
+   ───────────────────────── */
+.hero {
+    display:flex;
+    justify-content:center;
+    /* padding:3rem 1rem; */
+    /* padding-top: 1rem;  */
+    padding-bottom: 2rem;
+    }
+.video-wrapper {
+    width:100%;
+    max-width:800px;
+    aspect-ratio:16/9;
+    }
+.video-wrapper iframe{
+    width:100%;
+    height:100%;
+    border:none;
+    /* border-radius:.75rem; */
+    }
 
 .footer {
     text-align: center;
@@ -62,12 +82,10 @@
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    /* gap: 10px; */
     width: 100%;
-    /* margin: 0; */
     padding: 0;
-    /* padding-bottom: 20px; */
-    padding-top: 20px;
+    /* padding-top: 20px; */
+    padding-bottom: 10px;
 }
 
 .copyright {
@@ -92,7 +110,6 @@
 }
 
 .faw:hover {
-    /* opacity: 75%; */
     transform: scale(1.1);
 
 }
@@ -106,18 +123,22 @@
 
 .grid {
     display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    max-width: 1000px; /* ← controls total width */
+    gap: 8px;
     width: auto;
     margin: 0;
-    padding: 0;
-    gap: 16px;
+    /* padding: 0; */
+    padding-bottom: 2rem;
 }
 
 .pics {
+    display:block;            /* kills inline baseline */
     width: 100%;
-    height: auto;
+    aspect-ratio: 1 / 1;
     margin: 0;
     padding: 0;
+    object-fit:cover;
    }
    
    .pics:hover {
@@ -129,8 +150,8 @@
 /* tablet breakpoint */
 @media (min-width:600px) {
     .grid {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-        gap: 15px;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 8px;
 
     }
     .faw {
@@ -143,17 +164,17 @@
     #desktop-logo {
         display: block;
     }
-    .pics {
+    /* .pics {
         width: 300px;
         height: 300px;
-       }
+       } */
 }
 
 /* desktop breakpoint */
 @media (min-width:900px) {
     .grid {
-        grid-template-columns: repeat(3, minmax(0, 1fr));
-        gap: 15px;
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+        gap: 8px;
     }
     #mobile-logo {
         display: none;
@@ -161,9 +182,34 @@
     #desktop-logo {
         display: block;
     }
-    .pics {
+    /* .pics {
         width: 300px;
         height: 300px;
-       }
+       } */
 }
+
+.live-feed {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    max-width: 800px;
+    margin: 0 auto;
+    /* padding: 3rem 1rem; */
+    padding-bottom: 2rem;
+  }
+  
+  .live-poster {
+    width: 100%;
+    max-width: 600px;
+    /* border-radius: 6px; */
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  }
+  
+  .live-poster:hover {
+    transform: scale(1.01);
+    transition: 0.2s ease;
+  }
+
+
 

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Live — Shankara Srikantan</title>
+  <meta name="description" content="Live performances and tour posters by Shankara Srikantan">
+
+  <link rel="icon" href="/media/favicon_letters.png" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
+  <link href="https://fonts.googleapis.com/css2?family=Karla:wght@200..800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<script>
+    async function loadPartial(id, file){
+      const res = await fetch(file);
+      document.getElementById(id).innerHTML = await res.text();
+    }
+    loadPartial('header-slot', '/header.html');
+    loadPartial('footer-slot', '/footer.html');
+  </script>
+
+<body class="page">
+
+    <div id="header-slot"></div>
+
+  <!-- Live Posters -->
+  <div class="live-feed">
+    <img class="live-poster" src="media/dstposter.jpg" alt="DST">
+    <img class="live-poster" src="media/modemhive.jpg" alt="Modem Hive">
+    <img class="live-poster" src="media/vaazhvekochi.jpg" alt="Vaazhve Kochi">
+    <img class="live-poster" src="media/nycmehfil.jpeg" alt="NYC Mehfil">
+    <!-- Add more as needed -->
+  </div>
+
+  <div id="footer-slot"></div>
+
+
+</body>
+</html>
