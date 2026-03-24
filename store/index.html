@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Store — Shankara Srikantan</title>
+  <meta name="description" content="Official merch and music downloads coming soon.">
+  <link rel="icon" href="/media/favicon_letters.png" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Karla:wght@200..800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+
+<script>
+    async function loadPartial(id, file){
+      const res = await fetch(file);
+      document.getElementById(id).innerHTML = await res.text();
+    }
+    loadPartial('header-slot', '/header.html');
+    loadPartial('footer-slot', '/footer.html');
+  </script>
+
+<body class="page">
+
+    <div id="header-slot"></div>
+
+    <div class="center" style="padding: 4rem 2rem;">
+      <div class="grid">
+        <div style="display:flex; flex-direction:column; align-items:center;">
+          <img src="/media/Stickers.png" alt="Stickers" class="pics" loading="lazy">
+          <p style="font-family:'Karla',sans-serif; text-align:center; margin-top:0.75rem;">Stickers - <em>Free (at shows)</em></p>
+        </div>
+        <a href="https://docs.google.com/document/d/1Dyeu9afBQ-TjL_Y1S3zno0UIkZKXX0YEh-MK7_Bk_mo/edit?tab=t.0" target="_blank" style="display:flex; flex-direction:column; align-items:center; text-decoration:none; color:inherit;">
+          <img src="https://drive.google.com/thumbnail?id=1Dyeu9afBQ-TjL_Y1S3zno0UIkZKXX0YEh-MK7_Bk_mo&sz=w400" alt="Chords" class="pics" loading="lazy">
+          <p style="font-family:'Karla',sans-serif; text-align:center; margin-top:0.75rem;">Chords - <em>Free</em></p>
+        </a>
+        <div style="display:flex; flex-direction:column; align-items:center;">
+          <img src="/media/studio.jpg" alt="Sample Pack" class="pics" loading="lazy">
+          <p style="font-family:'Karla',sans-serif; text-align:center; margin-top:0.75rem;">Sample Pack - <em>Coming Soon</em></p>
+        </div>
+      </div>
+    </div>
+
+    <div id="footer-slot"></div>
+
+</body>
+</html>
